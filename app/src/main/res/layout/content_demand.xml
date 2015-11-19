@@ -13,14 +13,14 @@
     android:orientation="vertical">
 
     <TextView
-        android:text="Check your wearable for the Demand prompt!"
+        android:text="Check your wearable for the Demand prompt!\nDemand received: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
 
     <TextView
         android:id="@+id/demand_text"
-        android:text="Demand received: (waiting)"
+        android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />

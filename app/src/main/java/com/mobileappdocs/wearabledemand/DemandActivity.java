@@ -119,12 +119,14 @@ public class DemandActivity extends AppCompatActivity {
 
     // Class to receive demand text from the wearable demand receiver
     public class MessageReceiver extends BroadcastReceiver {
+
         @Override
         public void onReceive(Context context, Intent intent) {
-            String reply = "Demand received: " + intent.getStringExtra("reply");
-            // Display message in UI
+
+            // Display the received demand
             TextView demandView = (TextView) findViewById(R.id.demand_text);
-            demandView.setText(reply);
+            String demand = demandView.getText() + intent.getStringExtra("reply");
+            demandView.setText(demand);
         }
     }
 
